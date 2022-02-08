@@ -1,0 +1,16 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+@import "_variables";
+@import "_mixins";
+@import "_first-header";
+@import "_main-header";
+@import "_about-me";
