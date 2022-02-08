@@ -1,0 +1,98 @@
+.about-device {
+    overflow-x: hidden;
+    padding: 40px 0;
+
+    .functions-box {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        color: $green;
+
+        .reason {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-around;
+            margin: 30px 0;
+            width: 100%;
+            height: 450px;
+
+            h3 {
+                font-family: $primary-font;
+                font-weight: 500;
+                width: 100%;
+                text-align: center;
+                font-size: 22px;
+                margin-bottom: 20px;
+            }
+
+            img {
+                width: 90%;
+                margin-bottom: 20px;
+            }
+
+            p {
+                font-family: $primary-font;
+                text-align: justify;
+            }
+        }
+
+        @media #{$tablet} {
+            .reason {
+                height: 700px;
+
+                h3 {
+                    font-size: 26px;
+                }
+
+                p {
+                    font-size: 22px;
+                }
+            }
+        }
+
+        @media #{$desktop} {
+            .reason {
+                width: 30%;
+                height: 550px;
+
+                h3 {
+                    font-size: 22px;
+                }
+
+                p {
+                    font-size: 18px;
+                }
+            }
+        }
+
+    }
+
+    h3 {
+        font-family: $primary-font;
+        color: $green;
+        font-weight: 500;
+        margin-bottom: 20px;
+    }
+
+    ul {
+        font-family: $primary-font;
+        color: $green;
+        margin-left: 30px;
+    }
+
+    @media #{$tablet} {
+        h3 {
+            font-size: 26px;
+        }
+
+        ul {
+            font-size: 22px;
+            margin-left: 40px;
+        }
+    }
+
+
+}
