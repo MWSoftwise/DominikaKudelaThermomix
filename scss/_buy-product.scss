@@ -1,0 +1,60 @@
+.buy-product {
+    background-color: rgba($color: $light-green, $alpha: .6);
+    padding: 50px 0;
+
+    .buy-wrapper {
+        margin-top: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        flex-wrap: wrap;
+
+        .buy-img {
+            width: 100%;
+            padding: 40px 0px;
+
+            img {
+                width: 100%;
+            }
+        }
+
+        .buy-text {
+            width: 100%;
+            color: $green;
+            font-family: $primary-font;
+            background-color: #fff;
+            padding: 20px;
+
+            h4 {
+                font-weight: 600;
+                font-size: 20px;
+                margin-bottom: 10px;
+            }
+
+            p {
+                margin-bottom: 10px;
+                line-height: 140%;
+            }
+        }
+
+        @media #{$desktop} {
+            .buy-img {
+                width: 40%;
+            }
+
+            .buy-text {
+                width: 50%;
+            }
+        }
+
+        @media #{$big-screens} {
+            .buy-img {
+                width: 25%;
+            }
+
+            .buy-text {
+                width: 35%;
+            }
+        }
+    }
+}

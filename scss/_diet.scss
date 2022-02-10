@@ -1,0 +1,75 @@
+.diet {
+    padding: 40px 0;
+}
+
+.carousel {
+    margin-top: 30px;
+
+    .swiper {
+        width: 100%;
+        height: 500px;
+        padding: 20px;
+
+
+        .cards-wrapper {
+
+
+            .one-card {
+                width: 300px;
+                font-family: $primary-font;
+                color: $green;
+                background-color: rgba($color: $light-green, $alpha: .6);
+                padding: 30px;
+                margin: 0px 0px;
+                border-radius: 25px;
+                @include shadow;
+                line-height: 150%;
+
+                .diet-title {
+                    font-weight: 500;
+                    text-align: center;
+                    font-size: 22px;
+                    padding-bottom: 20px;
+                }
+
+                .diet-pharagraph {
+                    font-size: 16px;
+                }
+
+                @media #{$desktop} {
+                    .diet-title {
+                        font-size: 18px;
+                    }
+                }
+
+                @media #{$big-screens} {
+                    .diet-title {
+                        font-size: 22px;
+                    }
+                }
+            }
+
+        }
+    }
+
+    @media #{$desktop} {
+        .swiper {
+            height: 550px;
+        }
+    }
+
+    @media #{$big-screens} {
+        .swiper {
+            height: 500px;
+        }
+    }
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+    color: $green !important;
+}
+
+:root {
+    --swiper-theme-color: green !important;
+}

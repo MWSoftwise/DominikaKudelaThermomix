@@ -9,3 +9,20 @@ hamburger.addEventListener('click',()=>{
         e.classList.toggle('active')
     });
 })
+
+// MENU SCROLLING
+
+$('nav ul li a').on("click", function () {
+    const scrolling = "#" + $(this).attr('data-menu');
+
+    $('body, html').animate({
+        scrollTop: $(scrolling).offset().top - 80
+    })
+})
+$('nav aside').on("click", function () {
+    const scrolling = "#" + $(this).attr('class');
+
+    $('body, html').animate({
+        scrollTop: $(scrolling).offset().top
+    })
+})

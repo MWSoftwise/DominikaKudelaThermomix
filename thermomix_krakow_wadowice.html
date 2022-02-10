@@ -6,11 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dominika Kudela - Przedstawiciel handlowy Thermomix Kraków i Wadowice</title>
     <meta name="description" content="Jestem przedstawicielem handlowym Thermomix na Kraków i Wadowice. Sprawdź moją ofertę i umów się na prezentację">
+    <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon" />
+    <script src="https://kit.fontawesome.com/26b4c8a0b6.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="dist/css/main.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Pacifico&family=Playfair+Display:wght@400;500;600;900&display=swap" rel="stylesheet">
-<script src="https://kit.fontawesome.com/26b4c8a0b6.js" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
 </head>
 <body>
     <header class="main-header">
@@ -23,11 +25,11 @@
                     <span></span>
                 </div>
                 <ul class="menu-list">
-                    <li><a href="#">Start</a></li>
-                    <li><a href="#">O Thermomixie</a></li>
-                    <li><a href="#">Diety</a></li>
-                    <li><a href="#">Zakup</a></li>
-                    <li><a href="#">Kontakt</a></li>
+                    <li><a data-menu="menuaboutme" href="#">Start</a></li>
+                    <li><a data-menu="menuabout" href="#">O Thermomixie</a></li>
+                    <li><a data-menu="menudiet" href="#">Diety</a></li>
+                    <li><a data-menu="menubuy" href="#">Zakup</a></li>
+                    <li><a data-menu="menucontact" href="#">Kontakt</a></li>
                 </ul>
             </nav>
         </div>
@@ -38,7 +40,7 @@
         </div>
     </header>
     <main>
-        <section class="about-me">
+        <section id="menuaboutme" class="about-me">
             <div class="container">
                 <h2 class="section-title">Kilka słów o mnie</h2>
                 <div class="content-box">
@@ -50,7 +52,7 @@
                 </div>
             </div>
         </section>
-        <section class="about-device">
+        <section id="menuabout" class="about-device">
             <div class="container">
                 <h2 class="section-title">Dlaczego Thermomix powinien znaleźć się w Twojej kuchni?</h2>
                 <div class="functions-box">
@@ -100,12 +102,222 @@
                 <h2>ODMIEŃ SWOJĄ KUCHNIE Z THERMOMIX JUŻ DZIŚ!</h2>
             </div>
         </section>
-        <section class="diet">
+        <section id="menudiet" class="diet">
             <div class="container">
-                <h2 class="section-title">Dlaczego Thermomix powinien znaleźć się w Twojej kuchni?</h2>
+                <h2 class="section-title">Czy wiesz, że w Thermomix możesz przygotować swoją dietę?</h2>
+                <div class="carousel">
+                    <div class="swiper mySwiper">
+                        <div class="cards-wrapper swiper-wrapper">
+                            <div class="one-card swiper-slide">
+                                <h4 class="diet-title">DIETA WEGAŃSKA</h4>
+                                <p class="diet-pharagraph">W tej diecie znajdziemy bogate w białko i składniki odżywcze dania wegańskie. Jest to solidna 
+                                    porcja energii niezbędnej nie tylko w trakcie wysiłku fizycznego, jak i w życiu codziennym. 
+                                    Wszystkie posiłki oraz pyszne i zdrowe desery. 
+                                    </br>-Leczo wegańskie z czerwoną soczewicą
+                                    </br>-Sałatka z fasoli, brokułu i pestek dyni 
+                                    </br>-Zupa krem z ciecierzycy i kalafiora</p>
+                            </div>
+                            <div class="one-card swiper-slide">
+                                <h4 class="diet-title">DIETA BEZ GLUTENU</h4>
+                                <p class="diet-pharagraph">Warto przekonać się, że dieta bez glutenu także może być niezwykle smaczna i zróżnicowana. 
+                                    Wszystkie przepisy z tej kolekcji zostały opracowane podczas konsultacji z dietetykami przez 
+                                    co są idealne dla osób nie lubiących nudy oraz oczekujących nowych doznań. 
+                                    </br>-Zupa z pieczonej dyni 
+                                    </br>-Ciasto czekoladowe z mąki gryczanej 
+                                    </br>-Dorsz w panierce z pietruszki na soczewicy z warzywami</p>
+                            </div>
+                            <div class="one-card swiper-slide">
+                                <h4 class="diet-title">DIETA LOW CARB – NISKOWĘGLODANOWA</h4>
+                                <p class="diet-pharagraph">W tej diecie znajdziemy bogate w białko i składniki odżywcze dania wegańskie. Jest to solidna 
+                                    porcja energii niezbędnej nie tylko w trakcie wysiłku fizycznego, jak i w życiu codziennym. 
+                                    Wszystkie posiłki oraz pyszne i zdrowe desery. 
+                                    </br>-Leczo wegańskie z czerwoną soczewicą 
+                                    </br>-Sałatka z fasoli, brokułu i pestek dyni 
+                                    </br>-Zupa krem z ciecierzycy i kalafiora</p>
+                            </div>
+                            <div class="one-card swiper-slide">
+                                <h4 class="diet-title">DIETA WYSOKOBIAŁKOWA</h4>
+                                <p class="diet-pharagraph">Dieta stworzona głównie dla osób aktywnych fizycznie. Posiłki oraz przekąski bogate w białko 
+                                    pozwolą na zintensyfikowanie swoich treningów. 
+                                    </br>-Czekoladowy shake proteinowy 
+                                    </br>-Domowa odżywka białkowa 
+                                    </br>-Pulpety indycze nadziewane mozarellą</p>
+                            </div>
+                            <div class="one-card swiper-slide">
+                                <h4 class="diet-title">DIETA BEZ LAKTOZY</h4>
+                                <p class="diet-pharagraph">Dania, przekąski oraz napoje dedykowane osobą, które nie tolerują laktozy. 
+                                    </br>-Sernik tofu 
+                                    </br>-Placki z otrębów owsianych 
+                                    </br>-Minizapiekanki z owocami morza</p>
+                            </div>
+                            <div class="one-card swiper-slide">
+                                <h4 class="diet-title">DIETA NA SUROWO – RAW FOOD</h4>
+                                <p class="diet-pharagraph">Dieta witariańska – zakłada spożywanie potraw bez gotowania, smażenia czy pieczenia. 
+                                    Podstawą tej diety są warzywa i owoce ale także orzechu i wszelkie nasiona. 
+                                    </br>-Krem z cukinii i orzechów nerkowca 
+                                    </br>-Spaghetti z marchewki z pesto z awokado 
+                                    </br>-Kuskus z kalafiora</p>
+                            </div>
+                            <div class="one-card swiper-slide">
+                                <h4 class="diet-title">LEKKIE OBIADY – DIETA DO 500 KCAL</h4>
+                                <p class="diet-pharagraph">Przepisy dla osób dbających o linię. Maksymalnie 500 kcal! 
+                                    </br>-Orientalne gołąbki w sosie słodko-kwaśnym 
+                                    </br>-Gulasz z udźca z indyka 
+                                    </br>-Pomidory faszerowane makaronem i mozzarellą</p>
+                            </div>
+                            <div class="one-card swiper-slide">
+                                <h4 class="diet-title">DANIA DLA DZIECI DO DRUGIEGO ROKU ŻYCIA</h4>
+                                <p class="diet-pharagraph">Przepisy na dania dla najmłodszych. Opracowane we współpracy z dietetykami, pediatrami 
+                                    oraz lekarzami według najmowych zaleceń. 
+                                    </br>-Wywar warzywny 
+                                    </br>-Owsianka zbożowa z jabłkiem i mlekiem 
+                                    </br>-Puree ziemniaczane z dynią </p>
+                            </div>
+                            <div class="one-card swiper-slide">
+                                <h4 class="diet-title">DIETA PALEO – TREŚCIWE ZUPY</h4>
+                                <p class="diet-pharagraph">Zdrowe, pożywne oraz smaczne zupy oparte o dietę paleo . Dieta ta bazuje na naturalnych 
+                                    produktach oraz zakłada całkowitą rezygnację z przetworzonej żywności. 
+                                    </br>-Zupa z kukurydzy z kurczakiem 
+                                    </br>-Zupa krem z batatów i marchewek 
+                                    </br>-Odchudzająca zupa z białej kapusty</p>
+                            </div>
+                            <div class="one-card swiper-slide">
+                                <h4 class="diet-title">SMOOTHIES DLA OSÓB AKTYWNYCH</h4>
+                                <p class="diet-pharagraph">Pozycje z tej kolekcji pomogą osobą aktywnym fizycznie utrzymać formę oraz regenerować 
+                                    organizm. Wszystkie smoothie są bogate w niezbędne dla zdrowia składniki mineralne oraz 
+                                    witaminy. 
+                                    </br>-Smoothie kiwi-jabłko-melon 
+                                    </br>-Smoothie malina-borówka-banan 
+                                    </br>-Smoothie szpinak-pomarańcza-ananas</p>
+                            </div>
+                            <div class="one-card swiper-slide">
+                                <h4 class="diet-title">POSILKI Z NISKIM INDEKSEM GLIKEMICZNYM</h4>
+                                <p class="diet-pharagraph">Menu o niskim indeksie glikemicznym (IG). Potrawy z tej kolekcji będą szczególnie przydatne 
+                                    dla osób z cukrzycą oraz dbających o formę. 
+                                    </br>-Placki z mąki kokosowej 
+                                    </br>-Jajka faszerowane brokułami i kiełkami 
+                                    </br>-Zupa gulaszowa z białej fasoli 
+                                    </br>-Pizza na mąkach pełnoziarnistych </p>
+                            </div>
+                            <div class="one-card swiper-slide">
+                                <h4 class="diet-title">NAPOJE DETOKS</h4>
+                                <p class="diet-pharagraph">Bogate w witaminy, szybkie w przygotowaniu. Napoje dostarczające energii oraz 
+                                    wzbogacające codzienną dietę. 
+                                    </br>-Napój z granatu i imbiru 
+                                    </br>-Smoothie z jagód acai, pomarańczy i jabłka 
+                                    </br>-Napój z zielonej pietruszki</p>
+                            </div>
+                        </div>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="menubuy" class="buy-product">
+            <div class="container">
+                <h2 class="section-title">Jak wygląda proces zakupu Thermomix?</h2>
+                <div class="buy-wrapper">
+                    <div class="buy-img">
+                        <img src="/img/device2.png" alt="Theromix">
+                    </div>
+                    <div class="buy-text">
+                        <h4>Proces zakupu Thermomix</h4>
+                        <p>Cena zakupu urządzenia to 5495 zł. Thermomix wraz ze stacją Friend to koszt: 7210 zł, zakup dodatkowej gwarancji na 3 lata: 499zł.</p>
+                        <p>Formy płatności: </p>
+                        <p>- możliwość zakupu za gotówkę bądź przelewem</p>
+                        <p>- opcja ratalna do wyboru od 142 zł miesięcznie</p>
+                        <p>- przystąpienie do współpracy z firmą i wypracowanie urządzenia</p>
+                        <p>Thermomix dostępny jest u mnie od ręki! Kupno sprzętu u przedstawiciela jest jedyną legalną możliwością nabycia sprzętu. </p>
+                        <p>W ,,gratisie” do Thermomix otrzymujesz moją pomoc i opiekę posprzedażową </p>
+                        <p>O co chodzi z tą prezentacją?</p>
+                        <p>Umawiamy termin spotkania dogodny dla obu stron. Może być to u Ciebie lub online. Ja zapewniam wszystkie składniki! Od Ciebie oczekuję jedynie 2 godzin czasu i dobrego humoru. Prezentacja NIE ZOBOWIĄZUJE DO ZAKUPU! Możesz sam zdecydować czy to urządzenia jest dla Ciebie. </p>
+                    </div>
+                </div>
             </div>
         </section>
     </main>
+    <section id="menucontact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Skontaktuj się ze mną i umów na prezentacje!</h2>
+            <div class="contact-wrapper">
+                <address class="contact-details">
+                    <h4>Kontakt</h4>
+                    <ul>
+                        <li><i class="fas fa-phone"></i><a href="tel:+48534720821"> +48 534 720 821</a></li>
+                        <li><i class="fas fa-envelope"></i> dominikawarmuz1@gmail.com</li>
+                        <li><i class="fab fa-instagram"></i><a target="_blank" href="https://instagram.com/dominika.kudela"> Instagram: dominika.kudela</a></li>
+                        <li><i class="fab fa-facebook-square"></i><a href="https://pl-pl.facebook.com/dominika.warmuz.5" target="_blank"> Dominika Kudela</a></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                </address>
+                <div class="contact-img">
+                    <img src="/img/me2.jpg" alt="Dominika Kudela">
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-wrapper">
+                <div class="footer-info">
+                    <p><i class="fas fa-phone"></i><a href="tel:+48534720821"> +48 534 720 821</a></p>
+                    <p><i class="fas fa-envelope"></i> dominikawarmuz1@gmail.com</p>
+                    <div class="socials">
+                        <a href="https://pl-pl.facebook.com/dominika.warmuz.5" target="_blank"><i class="fab fa-facebook"></i></a>
+                        <a target="_blank" href="https://instagram.com/dominika.kudela"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="copyright">
+                    <h5>DOMINIKA KUDELA</h5>
+                    <p>&copy 2022 Wszelkie prawa zastrzeżone</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script
+    src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+    crossorigin="anonymous"></script>
     <script src="main.js"></script>
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 1,
+        spaceBetween: 50,
+        slidesPerGroup: 1,
+        breakpoints:{
+            768:{
+                slidesPerView:2,
+                spaceBetween: 35,
+                
+            },
+
+            1024:{
+                slidesPerView:3,
+                spaceBetween:30
+            },
+            1400:{
+                slidesPerView:4,
+                spaceBetween: 100, 
+            }
+        },
+        loop: true,
+        loopFillGroupWithBlank: true,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
 </body>
 </html>
